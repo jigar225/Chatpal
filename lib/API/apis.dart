@@ -8,6 +8,6 @@ class Apis {
     geminiVersion = GenerativeModel(
       model: "gemini-1.5-flash-latest",
       apiKey: API_KEY,
-    );
+    );  
   }
 }
