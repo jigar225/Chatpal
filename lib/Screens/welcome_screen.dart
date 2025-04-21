@@ -26,7 +26,7 @@ class WelcomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment.center,
             child: Text(
-              'Hello, $firstName\n  How Can I help?',
+              'jigar, $firstName\n  How Can I help?',
               textAlign: TextAlign.center,
               style: GoogleFonts.publicSans(
                 fontSize: mq.width * 0.065,
