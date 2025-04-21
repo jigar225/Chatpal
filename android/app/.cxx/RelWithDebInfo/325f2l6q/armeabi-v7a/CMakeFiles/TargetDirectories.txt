@@ -1,0 +1,2 @@
+/Users/macair/Development/Projects/chatbot/android/app/.cxx/RelWithDebInfo/325f2l6q/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/macair/Development/Projects/chatbot/android/app/.cxx/RelWithDebInfo/325f2l6q/armeabi-v7a/CMakeFiles/rebuild_cache.dir

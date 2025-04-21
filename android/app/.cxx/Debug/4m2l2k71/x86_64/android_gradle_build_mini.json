@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/macair/Development/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/macair/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/macair/Development/Projects/chatbot/android/app/.cxx/Debug/4m2l2k71/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/macair/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/macair/Development/Projects/chatbot/android/app/.cxx/Debug/4m2l2k71/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
