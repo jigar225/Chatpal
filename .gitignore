@@ -44,7 +44,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 /android/app/google-services.json
-
+ios/Runner/GoogleService-Info.plist
 #env file
 .env
 credential.env
