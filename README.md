@@ -23,13 +23,15 @@ ChatPal is an intelligent chatbot app powered by Gemini AI, Firebase backend, an
    ```bash
    git clone https://github.com/your-username/chatpal.git
    cd chatpal
+2. Install dependencies:
 
-2.Install dependencies:
+   ```bash
    flutter pub get
+3. Set up Firebase: Follow Firebase documentation to set up your Firebase project and connect it to your Flutter app.
+   Set up Cloudinary to store media files and integrate it with the app.
 
-3.Set up Firebase and Cloudinary configurations
-  Follow Firebase documentation to set up your Firebase project and connect it to your Flutter app.
-  Set up Cloudinary to store media files and integrate it with the app
+4. Run the app::
 
-4.Run the app:
-  flutter run
+   ```bash
+   flutter run
+   
