@@ -1,0 +1,24 @@
+# Flutter
+.dart_tool/
+.build/
+build/
+
+# Android
+android/app/.cxx/
+android/.gradle/
+*.apk
+
+# iOS
+ios/Pods/
+ios/build/
+*.framework
+*.dill
+*.ipa
+
+# Firebase
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Env
+.env
+credential.env

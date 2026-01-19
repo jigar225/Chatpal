@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // User profiles:
+    //  - read is public so that username validation during sign-up works (unauthenticated)
+    //  - write is restricted to the owner
+    match /users/{uid} {
+      allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Chats: each chat doc must be owned by a userId matching auth uid
+    match /chats/{chatId} {
+      allow create: if isSignedIn()
+                    && request.resource.data.userId == request.auth.uid;
+
+      allow read, update, delete: if isSignedIn()
+                                  && resource.data.userId == request.auth.uid;
+
+      // Messages subcollection inherits ownership from parent chat
+      match /messages/{messageId} {
+        allow read, write: if isSignedIn()
+                           && get(/databases/$(database)/documents/chats/$(chatId)).data.userId == request.auth.uid;
+      }
+    }
+  }
+}
